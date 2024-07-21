@@ -50,13 +50,13 @@ h1, h2 {
     text-align: center;
 }
 
-/* CSS for item container (education, experience, project) */
+/* CSS for item containers (education, experience, project) */
 .itemContainer {
     margin-top: 20px;
 }
 
-/* CSS for individual item wrapper (education, experience, project) */
-.skillWrapper,.educationWrapper, .experienceWrapper, .projectWrapper {
+/* CSS for individual item wrappers (education, experience, project) */
+.skillWrapper, .educationWrapper, .experienceWrapper, .projectWrapper {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -71,7 +71,7 @@ h1, h2 {
     align-items: center;
 }
 
-/* CSS for remove item button */
+/* CSS for remove item buttons */
 .removeSkillButton, .removeEducationButton, .removeExperienceButton, .removeProjectButton {
     padding: 5px 10px;
     background-color: #dc3545;
@@ -81,8 +81,8 @@ h1, h2 {
     cursor: pointer;
 }
 
-/* Hover effect for remove item button */
-.removeSkillButton:hover,.removeEducationButton:hover, .removeExperienceButton:hover, .removeProjectButton:hover {
+/* Hover effect for remove item buttons */
+.removeSkillButton:hover, .removeEducationButton:hover, .removeExperienceButton:hover, .removeProjectButton:hover {
     background-color: #c82333;
 }
 
@@ -102,5 +102,18 @@ h1, h2 {
     align-items: center;
 }
 
+/* Media query for responsiveness */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
 
+    input[type=text], input[type=email], input[type=tel], input[type=number], input[type=date], textarea {
+        padding: 6px;
+        margin-bottom: 10px;
+    }
 
+    .skill, .education, .experience, .project {
+        grid-template-columns: 1fr;
+    }
+}
