@@ -60,10 +60,6 @@ The backend of the Resume Builder project handles storing resume data and genera
 
 The PDF generation in this project is handled by iTextPDF library, which is widely used for creating and manipulating PDF documents in Java.
 
-### Contributors
-
-- Gourav Bakshi (frontend developer & backened developer)
-
 ### ScreenShots
 - Form Screenshot
   
